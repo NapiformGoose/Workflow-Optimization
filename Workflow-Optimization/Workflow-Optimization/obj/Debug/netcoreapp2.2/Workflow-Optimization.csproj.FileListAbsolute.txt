@@ -1,0 +1,14 @@
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\bin\Debug\netcoreapp2.2\Workflow-Optimization.deps.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\bin\Debug\netcoreapp2.2\Workflow-Optimization.runtimeconfig.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\bin\Debug\netcoreapp2.2\Workflow-Optimization.runtimeconfig.dev.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\bin\Debug\netcoreapp2.2\Workflow-Optimization.dll
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\bin\Debug\netcoreapp2.2\Workflow-Optimization.pdb
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.csprojAssemblyReference.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.csproj.CoreCompileInputs.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.RazorAssemblyInfo.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.RazorAssemblyInfo.cs
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.AssemblyInfoInputs.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.AssemblyInfo.cs
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.RazorTargetAssemblyInfo.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.dll
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\Workflow-Optimization\obj\Debug\netcoreapp2.2\Workflow-Optimization.pdb
