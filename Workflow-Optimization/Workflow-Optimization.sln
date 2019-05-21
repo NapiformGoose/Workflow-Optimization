@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28822.285
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Workflow-Optimization", "Workflow-Optimization\Workflow-Optimization.csproj", "{72F9AC95-3BDD-40A9-A08A-36F49221C45C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{D56635AD-8F22-4235-BC41-A38A93A7E092}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorlflowOptimizationModelsLibrary", "WorlflowOptimizationModelsLibrary\WorlflowOptimizationModelsLibrary.csproj", "{71EAC503-DD87-4FA3-9FBF-E1C747147AF6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,10 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{72F9AC95-3BDD-40A9-A08A-36F49221C45C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{72F9AC95-3BDD-40A9-A08A-36F49221C45C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{72F9AC95-3BDD-40A9-A08A-36F49221C45C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{72F9AC95-3BDD-40A9-A08A-36F49221C45C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D56635AD-8F22-4235-BC41-A38A93A7E092}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D56635AD-8F22-4235-BC41-A38A93A7E092}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D56635AD-8F22-4235-BC41-A38A93A7E092}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D56635AD-8F22-4235-BC41-A38A93A7E092}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71EAC503-DD87-4FA3-9FBF-E1C747147AF6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71EAC503-DD87-4FA3-9FBF-E1C747147AF6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71EAC503-DD87-4FA3-9FBF-E1C747147AF6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71EAC503-DD87-4FA3-9FBF-E1C747147AF6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
