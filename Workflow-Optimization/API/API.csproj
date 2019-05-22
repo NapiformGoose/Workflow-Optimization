@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\WebView\WebView.csproj" />
     <ProjectReference Include="..\WorlflowOptimizationModelsLibrary\WorlflowOptimizationModelsLibrary.csproj" />
   </ItemGroup>
 

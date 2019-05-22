@@ -5,7 +5,6 @@ F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\W
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.AssemblyInfo.cs
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\bin\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.runtimeconfig.json
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\bin\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.runtimeconfig.dev.json
-F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.csprojAssemblyReference.cache
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\bin\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.pdb
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.dll
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.pdb

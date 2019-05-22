@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Workflow_Optimization.Context;
 using Workflow_Optimization.Models;
@@ -11,6 +12,7 @@ using Workflow_Optimization.Models;
 namespace API.Controllers
 {
     [Route("api/[controller]")]
+    [EnableCors("AllowAllOrigin")]
     public class MaterialsController : Controller
     {
         WorkflowOpimizationDBContext _context;

@@ -31,13 +31,15 @@
     </table>
  
     <script>
+
         // Получение всех материалов
         function GetMaterials() {
             $.ajax({
-                url: '/api/materials',
+                url: 'https://localhost:44371/api/materials',
                 type: 'GET',
                 contentType: "application/json",
                 success: function (materials) {
+console.dir(materials);
                     var rows = "";
                     $.each(materials, function (index, material) {
                         // добавляем полученные элементы в таблицу
@@ -50,7 +52,7 @@
         // Получение одного материала
         function GetMaterials(id) {
             $.ajax({
-                url: '/api/materials/'+id,
+                url: 'https://localhost:44371/api/materials/'+id,
                 type: 'GET',
                 contentType: "application/json",
                 success: function (material) {
@@ -116,7 +118,7 @@
         // создание строки для таблицы
         var row = function (material) {
             return "<tr data-rowid='" + material.id + "'><td>" + material.id + "</td>" +
-                   "<td>" + material.name + "</td> <td>" + material.age + "</td>" +
+                   "<td>" + material.name + "</td> <td>" + material.quantity + "</td>" +
                    "<td><a class='editLink' data-id='" + material.id + "'>Изменить</a> | " +
                     "<a class='removeLink' data-id='" + material.id + "'>Удалить</a></td></tr>";
         }
@@ -151,7 +153,7 @@
         })
  
         // загрузка материалов
-GetMaterials();
+        GetMaterials();
  
     </script>
 </body>

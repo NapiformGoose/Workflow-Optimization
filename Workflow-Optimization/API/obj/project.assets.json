@@ -4721,6 +4721,16 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "WebView/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/WebView.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/WebView.dll": {}
+        }
+      },
       "WorlflowOptimizationModelsLibrary/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.2",
@@ -12955,6 +12965,11 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "WebView/1.0.0": {
+      "type": "project",
+      "path": "../WebView/WebView.csproj",
+      "msbuildProject": "../WebView/WebView.csproj"
+    },
     "WorlflowOptimizationModelsLibrary/1.0.0": {
       "type": "project",
       "path": "../WorlflowOptimizationModelsLibrary/WorlflowOptimizationModelsLibrary.csproj",
@@ -12967,6 +12982,7 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
+      "WebView >= 1.0.0",
       "WorlflowOptimizationModelsLibrary >= 1.0.0"
     ]
   },
@@ -13003,6 +13019,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "F:\\Учёба\\Study\\GitHubProjects\\Workflow-Optimization\\Workflow-Optimization\\WebView\\WebView.csproj": {
+              "projectPath": "F:\\Учёба\\Study\\GitHubProjects\\Workflow-Optimization\\Workflow-Optimization\\WebView\\WebView.csproj"
+            },
             "F:\\Учёба\\Study\\GitHubProjects\\Workflow-Optimization\\Workflow-Optimization\\WorlflowOptimizationModelsLibrary\\WorlflowOptimizationModelsLibrary.csproj": {
               "projectPath": "F:\\Учёба\\Study\\GitHubProjects\\Workflow-Optimization\\Workflow-Optimization\\WorlflowOptimizationModelsLibrary\\WorlflowOptimizationModelsLibrary.csproj"
             }

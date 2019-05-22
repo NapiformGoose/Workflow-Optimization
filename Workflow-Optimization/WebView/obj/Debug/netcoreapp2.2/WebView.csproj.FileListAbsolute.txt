@@ -1,0 +1,13 @@
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\bin\Debug\netcoreapp2.2\WebView.deps.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\bin\Debug\netcoreapp2.2\WebView.runtimeconfig.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\bin\Debug\netcoreapp2.2\WebView.runtimeconfig.dev.json
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\bin\Debug\netcoreapp2.2\WebView.dll
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\bin\Debug\netcoreapp2.2\WebView.pdb
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.csproj.CoreCompileInputs.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.RazorAssemblyInfo.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.RazorAssemblyInfo.cs
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.AssemblyInfoInputs.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.AssemblyInfo.cs
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.RazorTargetAssemblyInfo.cache
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.dll
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WebView\obj\Debug\netcoreapp2.2\WebView.pdb

@@ -15,3 +15,5 @@ F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\A
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\API\obj\Debug\netcoreapp2.2\API.csproj.CopyComplete
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\API\obj\Debug\netcoreapp2.2\API.dll
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\API\obj\Debug\netcoreapp2.2\API.pdb
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\API\bin\Debug\netcoreapp2.2\WebView.dll
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\API\bin\Debug\netcoreapp2.2\WebView.pdb
