@@ -8,3 +8,4 @@ F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\W
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\bin\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.pdb
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.dll
 F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.pdb
+F:\Учёба\Study\GitHubProjects\Workflow-Optimization\Workflow-Optimization\WorlflowOptimizationModelsLibrary\obj\Debug\netcoreapp2.2\WorlflowOptimizationModelsLibrary.csprojAssemblyReference.cache

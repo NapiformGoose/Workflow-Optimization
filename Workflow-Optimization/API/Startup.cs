@@ -24,13 +24,21 @@ namespace API
 
         public IConfiguration Configuration { get; }
 
+        readonly string AllowAllOrigin = "AllowAllOrigin";
+
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DESKTOP-3GKCJ5H\\SQLEXPRESS;Initial Catalog=WorkflowOpimizationsDB;Integrated Security=True"));
             services.AddCors(options =>
             {
-                options.AddPolicy("AllowAllOrigin", builder => builder.AllowAnyOrigin());
+                options.AddPolicy("AllowAllOrigin", 
+                    builder =>
+                    {
+                        builder.AllowAnyOrigin()
+                               .AllowAnyMethod()
+                               .AllowAnyHeader();
+                    });
             });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
           
@@ -39,9 +47,16 @@ namespace API
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
-            app.UseStaticFiles();
-          
+            if (env.IsDevelopment())
+            {
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseHsts();
+            }
 
+            app.UseCors(AllowAllOrigin);
             app.UseHttpsRedirection();
             app.UseMvc();
         }

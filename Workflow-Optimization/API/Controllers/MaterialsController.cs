@@ -12,6 +12,7 @@ using Workflow_Optimization.Models;
 namespace API.Controllers
 {
     [Route("api/[controller]")]
+    [ApiController]
     [EnableCors("AllowAllOrigin")]
     public class MaterialsController : Controller
     {
