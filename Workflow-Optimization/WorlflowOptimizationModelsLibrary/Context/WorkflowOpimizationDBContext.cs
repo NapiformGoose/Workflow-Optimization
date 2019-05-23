@@ -3,10 +3,10 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Workflow_Optimization.Models;
+using WorlflowOptimizationModelsLibrary.Models;
 
 
-namespace Workflow_Optimization.Context
+namespace WorlflowOptimizationModelsLibrary.Context
 {
     public class WorkflowOpimizationDBContext : DbContext
     {

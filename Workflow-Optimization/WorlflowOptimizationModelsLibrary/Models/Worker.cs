@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Workflow_Optimization.Models
+namespace WorlflowOptimizationModelsLibrary.Models
 {
     public class Worker
     {

@@ -4,8 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
-using Workflow_Optimization.Context;
-using Workflow_Optimization.Models;
+using WorlflowOptimizationModelsLibrary.Context;
+using WorlflowOptimizationModelsLibrary.Models;
+using API.Repositories;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -17,15 +18,17 @@ namespace API.Controllers
     public class MaterialsController : Controller
     {
         WorkflowOpimizationDBContext _context;
+        Repository<Material> _repository;
         public MaterialsController(WorkflowOpimizationDBContext context)
         {
             _context = context;
+            _repository = new Repository<Material>(_context);
         }
         // GET: api/<controller>
         [HttpGet]
         public IEnumerable<Material> Get()
         {
-            return _context.Materials.ToList();
+            return _repository.GetAll();
         }
 
         // GET api/<controller>/5
