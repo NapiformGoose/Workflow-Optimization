@@ -17,5 +17,6 @@ namespace WorlflowOptimizationModelsLibrary.Context
         public DbSet<Service> Services { get; set; }
         public DbSet<Worker> Workers { get; set; }
         public DbSet<WorkingDay> WorkingDays { get; set; }
+        public DbSet<BuildingObject> BuildingObjects { get; set; }
     }
 }

@@ -29,7 +29,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DESKTOP-3GKCJ5H\\SQLEXPRESS;Initial Catalog=WorkflowOpimizationsDB;Integrated Security=True"));
+            services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DESKTOP-3GKCJ5H\\SQLEXPRESS;Initial Catalog=WorkflowOpimizationDB;Integrated Security=True"));
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAllOrigin", 

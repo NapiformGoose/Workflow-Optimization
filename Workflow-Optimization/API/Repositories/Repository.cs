@@ -22,7 +22,7 @@ namespace API.Repositories
 
         public IEnumerable<T> GetAll()
         {
-            return _dbSet.AsNoTracking().ToList();
+            return _dbSet.ToList();
         }
         public T Get(int id)
         {

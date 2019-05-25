@@ -1,24 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Web;
+using System.Text;
 
 namespace WorlflowOptimizationModelsLibrary.Models
 {
-    public class Worker
+    public class MaterialType
     {
         public int Id { get; set; }
 
         [Required]
         [StringLength(50)]
         public string Name { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string Position { get; set; }
 
-        public int WorkingDayId { get; set; }
-        public WorkingDay WorkingDay { get; set; }
-
+        public IList<Material> Materials { get; set; }
+        public MaterialType()
+        {
+            Materials = new List<Material>();
+        }
     }
 }
