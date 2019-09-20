@@ -1,0 +1,16 @@
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.csprojAssemblyReference.cache
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.csproj.CoreCompileInputs.cache
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfoInputs.cache
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\Common.deps.json
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\Common.dll
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\API.dll
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\API.pdb
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.csproj.CopyComplete
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\Common.pdb
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.dll
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\obj\Debug\netcoreapp2.2\Common.pdb
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\API.Views.dll
+I:\Study\University\GitHubProjects\WorkflowOptimization\Common\bin\Debug\netcoreapp2.2\API.Views.pdb

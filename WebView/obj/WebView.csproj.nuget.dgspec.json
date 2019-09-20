@@ -1,0 +1,280 @@
+{
+  "format": 1,
+  "restore": {
+    "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\WebView\\WebView.csproj": {}
+  },
+  "projects": {
+    "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\API.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\API.csproj",
+        "projectName": "API",
+        "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\NapiformGoose\\.nuget\\packages\\",
+        "outputPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NapiformGoose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj": {
+                "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[2.2.3, )"
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\Common.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\Common.csproj",
+        "projectName": "Common",
+        "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\Common.csproj",
+        "packagesPath": "C:\\Users\\NapiformGoose\\.nuget\\packages\\",
+        "outputPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NapiformGoose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\API.csproj": {
+                "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\API\\API.csproj"
+              },
+              "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj": {
+                "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.2.6, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj",
+        "projectName": "ModelsLibrary",
+        "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj",
+        "packagesPath": "C:\\Users\\NapiformGoose\\.nuget\\packages\\",
+        "outputPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NapiformGoose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.DataAnnotations": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    },
+    "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\WebView\\WebView.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\WebView\\WebView.csproj",
+        "projectName": "WebView",
+        "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\WebView\\WebView.csproj",
+        "packagesPath": "C:\\Users\\NapiformGoose\\.nuget\\packages\\",
+        "outputPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\WebView\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\NapiformGoose\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.2"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.2": {
+            "projectReferences": {
+              "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\Common.csproj": {
+                "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\Common\\Common.csproj"
+              },
+              "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj": {
+                "projectPath": "I:\\Study\\University\\GitHubProjects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.2": {
+          "dependencies": {
+            "Microsoft.AspNetCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            },
+            "Microsoft.AspNetCore.Razor.Design": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.2.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true
+        }
+      }
+    }
+  }
+}
