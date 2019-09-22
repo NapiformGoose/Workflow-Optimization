@@ -1,9 +1,0 @@
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\bin\Debug\netstandard2.0\ModelsLibrary.deps.json
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\bin\Debug\netstandard2.0\ModelsLibrary.dll
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.csproj.CoreCompileInputs.cache
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.AssemblyInfoInputs.cache
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.AssemblyInfo.cs
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\bin\Debug\netstandard2.0\ModelsLibrary.pdb
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.dll
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.pdb
-I:\Study\University\GitHubProjects\WorkflowOptimization\ModelsLibrary\obj\Debug\netstandard2.0\ModelsLibrary.csprojAssemblyReference.cache

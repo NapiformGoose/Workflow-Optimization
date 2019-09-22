@@ -10,26 +10,26 @@ export class App extends Component {
 
         this.state = {
             // selected: "",
-            // diagramBase64: null
+            materialsCollection: null
         };
 
-        // var xhr = new XMLHttpRequest();
-        // xhr.open("GET", this.props.getUrl, true);
-        // xhr.responseType = "text";
-        // xhr.onload = function () {
-        //     var data = JSON.parse(xhr.responseText);
-        //     this.setState({ diagramBase64: data });
+         var xhr = new XMLHttpRequest();
+         xhr.open("GET", "Materials/Get", true);
+         xhr.responseType = "text";
+        xhr.onload = function () {
+            var data = xhr.response;
+             this.setState({ materialsCollection: data });
 
-        // }.bind(this);
-        // xhr.send();
+         }.bind(this);
+         xhr.send();
     }
 
-    // componentDidMount() { //обновление выбранного элемента
-    //     store.subscribe(() => {
-    //         this.setState({
-    //             selected: store.getState().selected
-    //         });
-    //     });
+     //componentDidMount() { //обновление выбранного элемента
+     //    store.subscribe(() => {
+     //        this.setState({
+     //            materialsCollection: store.getState().materialsCollection
+     //        });
+     //    });
 
     //     //var xhr1 = new XMLHttpRequest();
     //     //var url = "url";
@@ -46,7 +46,7 @@ export class App extends Component {
                     <MainMenu />
                 </div>
                 <div className='materialContainer'>
-                    <MaterialContainer  />
+                    <MaterialContainer materialsCollection={this.state.materialsCollection} />
                 </div>
             </div>
         );

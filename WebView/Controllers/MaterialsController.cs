@@ -9,8 +9,8 @@ using Common;
 
 namespace WebView
 {
-    [Route("api/[controller]")]
-    [ApiController]
+    //[Route("api/[controller]")]
+    //[ApiController]
     [EnableCors("AllowAllOrigin")]
     public class MaterialsController : Controller
     {
@@ -26,14 +26,19 @@ namespace WebView
             return View();//path);
         }
 
-        // GET: api/<controller>
+        //GET: api/<controller>
+        //[HttpGet]
+        //public IEnumerable<MaterialDTO> Get()
+        //{
+        //    IEnumerable<MaterialDTO> materialDTO = _materialService.GetMaterials();
+        //    return materialDTO;
+        //}
         [HttpGet]
         public IEnumerable<MaterialDTO> Get()
         {
             IEnumerable<MaterialDTO> materialDTO = _materialService.GetMaterials();
             return materialDTO;
         }
-
         //// GET api/<controller>/5
         //[HttpGet("{id}")]
         //public IActionResult Get(int id)

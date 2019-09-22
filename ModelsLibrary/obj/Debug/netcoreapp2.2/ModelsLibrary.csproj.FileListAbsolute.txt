@@ -1,0 +1,8 @@
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.deps.json
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.csproj.CoreCompileInputs.cache
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfoInputs.cache
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.pdb

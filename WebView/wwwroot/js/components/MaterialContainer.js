@@ -13,8 +13,8 @@ class MaterialContainer extends Component {
   render() {
     return (
       <div className="Materials">
-        <p className="Materials">Materials Table</p>
-        <MaterialsTable data={data}/>
+            <p className="Materials">{this.props.materialsCollection}e</p>
+            <MaterialsTable data={this.props.materialsCollection} />
       </div>
     );
   }
