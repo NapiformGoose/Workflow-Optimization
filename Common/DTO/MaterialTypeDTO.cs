@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Common
 {
-    public class MaterialType
+    public class MaterialTypeDTO
     {
         public int Id { get; set; }
         public string Name { get; set; }

@@ -1,0 +1,14 @@
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\Interfaces.deps.json
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\Interfaces.dll
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\Interfaces.pdb
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\Common.dll
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\Common.pdb
+D:\Projects\WorkflowOptimization\Interfaces\bin\Release\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.csprojAssemblyReference.cache
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.csproj.CoreCompileInputs.cache
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.AssemblyInfoInputs.cache
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.AssemblyInfo.cs
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.csproj.CopyComplete
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.dll
+D:\Projects\WorkflowOptimization\Interfaces\obj\Release\netcoreapp2.2\Interfaces.pdb

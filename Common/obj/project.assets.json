@@ -760,35 +760,6 @@
         "compile": {
           "ref/netstandard1.3/System.Threading.Tasks.dll": {}
         }
-      },
-      "API/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "AutoMapper": "9.0.0",
-          "Microsoft.EntityFrameworkCore": "2.2.6",
-          "ModelsLibrary": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/API.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/API.dll": {}
-        }
-      },
-      "ModelsLibrary/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v2.2",
-        "dependencies": {
-          "AutoMapper": "9.0.0",
-          "Microsoft.EntityFrameworkCore": "2.2.6"
-        },
-        "compile": {
-          "bin/placeholder/ModelsLibrary.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ModelsLibrary.dll": {}
-        }
       }
     }
   },
@@ -3113,25 +3084,13 @@
         "system.threading.tasks.4.3.0.nupkg.sha512",
         "system.threading.tasks.nuspec"
       ]
-    },
-    "API/1.0.0": {
-      "type": "project",
-      "path": "../API/API.csproj",
-      "msbuildProject": "../API/API.csproj"
-    },
-    "ModelsLibrary/1.0.0": {
-      "type": "project",
-      "path": "../ModelsLibrary/ModelsLibrary.csproj",
-      "msbuildProject": "../ModelsLibrary/ModelsLibrary.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
-      "API >= 1.0.0",
       "AutoMapper >= 9.0.0",
       "Microsoft.EntityFrameworkCore >= 2.2.6",
-      "Microsoft.NETCore.App >= 2.2.0",
-      "ModelsLibrary >= 1.0.0"
+      "Microsoft.NETCore.App >= 2.2.0"
     ]
   },
   "packageFolders": {
@@ -3164,14 +3123,7 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {
-            "D:\\Projects\\WorkflowOptimization\\API\\API.csproj": {
-              "projectPath": "D:\\Projects\\WorkflowOptimization\\API\\API.csproj"
-            },
-            "D:\\Projects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj": {
-              "projectPath": "D:\\Projects\\WorkflowOptimization\\ModelsLibrary\\ModelsLibrary.csproj"
-            }
-          }
+          "projectReferences": {}
         }
       },
       "warningProperties": {

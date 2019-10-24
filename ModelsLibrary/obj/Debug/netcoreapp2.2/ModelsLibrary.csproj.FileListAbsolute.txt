@@ -6,3 +6,12 @@ D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLib
 D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
 D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.dll
 D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.pdb
+D:\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.deps.json
+D:\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
+D:\WorkflowOptimization\ModelsLibrary\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
+D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.csproj.CoreCompileInputs.cache
+D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfoInputs.cache
+D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
+D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.dll
+D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.csprojAssemblyReference.cache

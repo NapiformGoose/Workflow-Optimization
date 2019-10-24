@@ -1,0 +1,16 @@
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Logics.deps.json
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Logics.dll
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Logics.pdb
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Common.dll
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Interfaces.dll
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Interfaces.pdb
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\Logic\bin\Debug\netcoreapp2.2\Common.pdb
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.csprojAssemblyReference.cache
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.csproj.CoreCompileInputs.cache
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.AssemblyInfoInputs.cache
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.AssemblyInfo.cs
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.csproj.CopyComplete
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.dll
+D:\Projects\WorkflowOptimization\Logic\obj\Debug\netcoreapp2.2\Logics.pdb

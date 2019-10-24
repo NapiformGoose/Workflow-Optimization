@@ -9,9 +9,4 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.2.6" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\API\API.csproj" />
-    <ProjectReference Include="..\ModelsLibrary\ModelsLibrary.csproj" />
-  </ItemGroup>
-
 </Project>

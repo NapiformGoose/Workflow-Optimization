@@ -9,6 +9,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.EntityFrameworkCore;
+using Interfaces;
+
 
 namespace WebView
 {
@@ -25,6 +28,11 @@ namespace WebView
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            //services.AddTransient<WorkflowOpimizationDBContext, WorkflowOpimizationDBContext>();
+            //services.AddDbContext<IStorageContext>(options => options.UseSqlServer(Configuration["database:connection"]));
+            
+            //services.AddDbContext<IStorageContext>(options => options.UseSqlServer("Data Source=DEV06\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True"));
+            //services.AddTransient<IMaterialService, MaterialService>();
             services.Configure<CookiePolicyOptions>(options =>
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
@@ -68,7 +76,7 @@ namespace WebView
             {
                 routes.MapRoute(
                     name: "default",
-                    template: "{controller=Materials}/{action=Index}/{id?}");
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
     }

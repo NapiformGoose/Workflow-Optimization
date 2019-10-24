@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Common;
+using Interfaces;
 
 
 namespace WebView
@@ -22,8 +23,7 @@ namespace WebView
 
         public ActionResult Index()
         {
-            //string path = AppDomain.CurrentDomain.GetData("Index.cshtml").ToString();
-            return View();//path);
+            return View();
         }
 
         //GET: api/<controller>

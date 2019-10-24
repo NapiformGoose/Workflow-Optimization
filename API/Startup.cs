@@ -26,7 +26,7 @@ namespace API
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DEV06\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True"));
+            //services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DEV06\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True"));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 

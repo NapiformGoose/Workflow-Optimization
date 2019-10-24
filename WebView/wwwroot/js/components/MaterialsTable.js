@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import {BootstrapTable, TableHeaderColumn} from 'react-bootstrap-table';
-//import '../css/Table.css';
-import '../../css/react-bootstrap-table.css'
- 
+import '../../../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min.css';
  
 class MaterialsTable extends Component {
     render() {
-        var a = this.props.materialsCollection;
         return (
-            <div defaultValue={this.props.materialsCollection}>
-          
-      </div>
+          <div>
+          <BootstrapTable data={this.props.materialsCollection} striped={true} hover={true}>
+          <TableHeaderColumn isKey dataField='id'>
+            ID
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='quantity'>
+            Quantity
+          </TableHeaderColumn>
+          </BootstrapTable>
+        </div>
     );
   }
 }

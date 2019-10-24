@@ -1,10 +1,13 @@
 ﻿import React, { Component } from "react";
+import Home from "./Home";
 import MainMenu from "./MainMenu";
 import MaterialContainer from "./MaterialContainer"
 //import { store } from "../index"
 import regeneratorRuntime, { async } from "regenerator-runtime";
+//import { request } from "http";
 
 export class App extends Component {
+
     constructor(props) {
         super(props);
 
@@ -13,15 +16,16 @@ export class App extends Component {
             materialsCollection: null
         };
 
-         var xhr = new XMLHttpRequest();
-         xhr.open("GET", "Materials/Get", true);
-         xhr.responseType = "text";
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "Materials/Get", true);
+        xhr.responseType = "text";
         xhr.onload = function () {
-            var data = xhr.response;
-             this.setState({ materialsCollection: data });
-
-         }.bind(this);
-         xhr.send();
+            var data = xhr.responseText;
+            var data1 = JSON.parse(data);
+            this.setState({ materialsCollection: data1 });
+            this.a;
+        }.bind(this);
+        xhr.send();
     }
 
      //componentDidMount() { //обновление выбранного элемента
@@ -42,12 +46,13 @@ export class App extends Component {
     render() {
         return (
             <div className="app">
-                <div className='mainMenu' >
-                    <MainMenu />
+                <div className='home' >
+                <Home />
                 </div>
                 <div className='materialContainer'>
-                    <MaterialContainer materialsCollection={this.state.materialsCollection} />
+                   <MaterialContainer materialsCollection={this.state.materialsCollection} />
                 </div>
+                
             </div>
         );
     }

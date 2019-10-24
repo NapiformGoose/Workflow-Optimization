@@ -31,9 +31,9 @@
   export const store = createStore(selectedObjectReducer);
   
   ReactDOM.render(
-      //<Provider store={store}>
+      <Provider store={store}>
           <App />,
-      //</Provider>,
+      </Provider>,
   
       document.getElementById("root")
   );

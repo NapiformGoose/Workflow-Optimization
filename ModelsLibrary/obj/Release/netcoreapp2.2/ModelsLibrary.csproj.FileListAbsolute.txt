@@ -1,0 +1,17 @@
+D:\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.deps.json
+D:\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.dll
+D:\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.pdb
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.csprojAssemblyReference.cache
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.csproj.CoreCompileInputs.cache
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.AssemblyInfoInputs.cache
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.dll
+D:\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.deps.json
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\ModelsLibrary\bin\Release\netcoreapp2.2\ModelsLibrary.pdb
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.csproj.CoreCompileInputs.cache
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.AssemblyInfoInputs.cache
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.dll
+D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Release\netcoreapp2.2\ModelsLibrary.pdb
