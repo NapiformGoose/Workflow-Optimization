@@ -14,4 +14,3 @@ D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.Asse
 D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.AssemblyInfo.cs
 D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.dll
 D:\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.pdb
-D:\Projects\WorkflowOptimization\ModelsLibrary\obj\Debug\netcoreapp2.2\ModelsLibrary.csprojAssemblyReference.cache

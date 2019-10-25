@@ -1,12 +1,10 @@
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Storage.deps.json
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Storage.dll
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Storage.pdb
-D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Common.dll
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Interfaces.dll
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Interfaces.pdb
 D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
-D:\Projects\WorkflowOptimization\Storage\bin\Debug\netcoreapp2.2\Common.pdb
 D:\Projects\WorkflowOptimization\Storage\obj\Debug\netcoreapp2.2\Storage.csprojAssemblyReference.cache
 D:\Projects\WorkflowOptimization\Storage\obj\Debug\netcoreapp2.2\Storage.csproj.CoreCompileInputs.cache
 D:\Projects\WorkflowOptimization\Storage\obj\Debug\netcoreapp2.2\Storage.AssemblyInfoInputs.cache
