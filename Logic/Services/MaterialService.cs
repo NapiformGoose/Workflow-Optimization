@@ -1,10 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
-using AutoMapper;
 using ModelsLibrary;
 using Interfaces;
-using Common;
 
 namespace Logics
 {
@@ -18,7 +16,7 @@ namespace Logics
             _repository = new Repository<Material>(_context);
         }
 
-        public MaterialDTO GetMaterial(int? id)
+        public Material GetMaterial(int? id)
         {
             if (id == null)
             {
@@ -32,17 +30,18 @@ namespace Logics
                 //throw new ValidationException("Телефон не найден", "");
             }
 
-            return new MaterialDTO { Quantity = material.Quantity, Id = material.Id };
+            return new Material { Quantity = material.Quantity, Id = material.Id };
         }
 
-        public IEnumerable<MaterialDTO> GetMaterials()
+        public IEnumerable<Material> GetMaterials()
         {
             // применяем автомаппер для проекции одной коллекции на другую
-            var mapper = new MapperConfiguration(m => m.CreateMap<Material, MaterialDTO>()).CreateMapper();
-            return mapper.Map<IEnumerable<Material>, List<MaterialDTO>>(_repository.GetAll());
+            //var mapper = new MapperConfiguration(m => m.CreateMap<Material, MaterialDTO>()).CreateMapper();
+            //return mapper.Map<IEnumerable<Material>, List<MaterialDTO>>(_repository.GetAll());
+            return _repository.GetAll();
         }
 
-        public void MakeMaterial(MaterialDTO materialDto)
+        public void MakeMaterial(Material materialDto)
         {
             Material material = new Material()
             {
