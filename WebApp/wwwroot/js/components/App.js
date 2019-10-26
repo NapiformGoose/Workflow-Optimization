@@ -5,7 +5,9 @@ import MaterialContainer from "./MaterialContainer"
 //import { store } from "../index"
 import regeneratorRuntime, { async } from "regenerator-runtime";
 //import { request } from "http";
+import "../../css/bootstrap.css";
 
+import { Nav, Navbar, Button, FormControl, Form } from "react-bootstrap";
 export class App extends Component {
 
     constructor(props) {
@@ -47,12 +49,27 @@ export class App extends Component {
         return (
             <div className="app">
                 <div className='home' >
-                <Home />
+                <Navbar bg="dark" variant="dark">
+                    <Navbar.Brand>Navbar</Navbar.Brand>
+                    <Nav className="mr-auto">
+                        <Nav.Link href="home">Home</Nav.Link>
+                    </Nav>
+                    <Nav className="mr-auto">
+                        <Nav.Link href="materialContainer">Materialsdfd table</Nav.Link>
+                    </Nav>
+                    <Form inline>
+                        <FormControl type="text" placeholder="Search" className="mr-sm-2" />
+                        <Button variant="outline-info">Search</Button>
+                    </Form>
+                </Navbar>
+                </div>
+                <div className='home' >
+                    <Home />
                 </div>
                 <div className='materialContainer'>
-                   <MaterialContainer materialsCollection={this.state.materialsCollection} />
+                    <MaterialContainer materialsCollection={this.state.materialsCollection} />
                 </div>
-                
+
             </div>
         );
     }
