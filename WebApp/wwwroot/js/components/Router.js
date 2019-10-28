@@ -1,16 +1,19 @@
-import React from 'react';
-import { Switch, BrowserRouter as Router, Route } from "react-router-dom";
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 
-import Home from "./Home";
-import MaterialContainer from "./MaterialContainer"
-
-export default (
-  <Router>
-      <Switch>
-            <Route path="/home" component={Home}></Route>
-            <Route path="/materials" component={MaterialContainer}></Route>
-        </Switch>
-
-  </Router>
-);
+export class Nav extends Component {
+  render() {
+    return (
+      <div className="nav">
+        <nav>
+          <ul>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/materials'>Materials</Link></li>
+          </ul>
+        </nav>
+      </div>
+    );
+  }
+}
+export default Nav;

@@ -4,9 +4,8 @@ import ReactDOM from "react-dom";
 import { Provider } from "react-redux";
 import { createStore, combineReducers } from 'redux';
 import { BrowserRouter, Route } from 'react-router-dom';
-//import { App } from "../js/components/App";
-import MainLayout from '../js/components/MainLayout';
-//redux
+import { App } from "../js/components/App";
+
 const selectedObjectReducer = function (state = "", action) {
     switch (action.type) {
         case 'selectedObject_CHANGED':
@@ -21,8 +20,10 @@ export const store = createStore(selectedObjectReducer);
 
 ReactDOM.render(
     <Provider store={store}>
-        <MainLayout/>
-      </Provider>,
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>,
 
     document.getElementById("root")
 );
