@@ -11,7 +11,7 @@ namespace ModelsLibrary
         public int Id { get; set; }
 
         public int MaterialTypeId { get; set; }
-        public MaterialType MaterialType { get; set; }
+        public virtual MaterialType MaterialType { get; set; }
 
         [Required]
         [StringLength(10)]

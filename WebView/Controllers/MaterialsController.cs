@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Interfaces;
 using ModelsLibrary;
 
-namespace WebAPI
+namespace WebView
 {
     //[Route("api/[controller]")]
     //[ApiController]

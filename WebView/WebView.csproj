@@ -5,21 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Views\Home\Index.cshtml" />
-    <None Remove="Views\Materials\Index.cshtml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Content Include="Views\Home\Index.cshtml">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-    <Content Include="Views\Materials\Index.cshtml">
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-    </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.Cors" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Mvc" Version="2.2.0" />
   </ItemGroup>

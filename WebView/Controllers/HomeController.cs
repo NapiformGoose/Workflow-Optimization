@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Cors;
 
-namespace WebApp
+namespace WebView
 {
     [EnableCors("AllowAllOrigin")]
     public class HomeController : Controller

@@ -29,7 +29,7 @@ namespace WebApp
 
         public void ConfigureServices(IServiceCollection services)
         {
-            var assembly = Assembly.Load("WebAPI");
+            var assembly = Assembly.Load("WebView");
 
             //services.AddTransient<WorkflowOpimizationDBContext, WorkflowOpimizationDBContext>();
             //services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer(Configuration["database:connection"]));
