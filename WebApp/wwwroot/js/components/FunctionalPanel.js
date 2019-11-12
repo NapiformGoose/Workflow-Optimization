@@ -11,9 +11,9 @@ export class FunctionalPanel extends Component {
         return (
             <div className="functionalPanel">
                 <ButtonGroup size="lg">
-                    <Button>Left</Button>
-                    <Button>Middle</Button>
-                    <Button>Right</Button>
+                    <Button>Create</Button>
+                    <Button>Update</Button>
+                    <Button>Delete</Button>
                 </ButtonGroup>
             </div>
         );

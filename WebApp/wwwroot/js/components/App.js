@@ -1,8 +1,7 @@
 ﻿import React, { Component } from "react";
 import regeneratorRuntime, { async } from "regenerator-runtime";
 //import { request } from "http";
-import FunctionalPanel from "./FunctionalPanel";
-import NavigationBar from "./Router";
+import NavigationBar from "./NavigationBar";
 import MainLayout from "./MainLayout";
 
 export class App extends Component {
@@ -12,7 +11,8 @@ export class App extends Component {
 
         this.state = {
             materialsCollection: null,
-            workingDaysCollection: null
+            workingDaysCollection: null,
+            servicesCollection: null
         };
 
         var xhr = new XMLHttpRequest();
@@ -25,15 +25,26 @@ export class App extends Component {
         }.bind(this);
         xhr.send();
 
-        var xhr = new XMLHttpRequest();
-        xhr.open("GET", "WorkingDay/Get", true);
-        xhr.responseType = "text";
-        xhr.onload = function () {
-            var response = xhr.responseText;
+        var xhr1 = new XMLHttpRequest();
+        xhr1.open("GET", "WorkingDay/Get", true);
+        xhr1.responseType = "text";
+        xhr1.onload = function () {
+            var response = xhr1.responseText;
             var data = JSON.parse(response);
             this.setState({ workingDaysCollection: data });
         }.bind(this);
-        xhr.send();
+        xhr1.send();
+
+        var xhr2 = new XMLHttpRequest();
+        xhr2.open("GET", "Service/Get", true);
+        xhr2.responseType = "text";
+        xhr2.onload = function () {
+            var response = xhr2.responseText;
+            var data = JSON.parse(response);
+            this.setState({ servicesCollection: data });
+        }.bind(this);
+        console.log(this.state.servicesCollection);
+        xhr2.send();
     }
 
      //componentDidMount() { //обновление выбранного элемента
@@ -52,12 +63,14 @@ export class App extends Component {
     //     //xhr1.send(data);
     // }
     render() {
-        console.log(this.state.workingDaysCollection);
+        console.log(this.state.servicesCollection);
         return (
             <div className="app">
                 <NavigationBar />
-                <FunctionalPanel />
-                <MainLayout materialsCollection = {this.state.materialsCollection} workingDaysCollection = {this.state.workingDaysCollection}/>
+                <MainLayout 
+                materialsCollection = {this.state.materialsCollection} 
+                workingDaysCollection = {this.state.workingDaysCollection}
+                servicesCollection = {this.state.servicesCollection}/>
             </div>
         );
     }

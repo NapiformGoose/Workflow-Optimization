@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Common
+namespace WebView
 {
-    public class ServiceTypeView
+    public class ServiceListViewModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
-
+        public string Shop { get; set; }
     }
 }

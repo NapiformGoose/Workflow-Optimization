@@ -24,6 +24,11 @@ export class NavigationBar extends Component {
                   <Nav.Link as={Link} to="/workingdays" >Working days</Nav.Link>
                 </NavItem>
               </Nav>
+              <Nav className="mr-auto">
+                <NavItem href="/services">
+                  <Nav.Link as={Link} to="/services" >Services</Nav.Link>
+                </NavItem>
+              </Nav>
           </Navbar>
       </div>
     );

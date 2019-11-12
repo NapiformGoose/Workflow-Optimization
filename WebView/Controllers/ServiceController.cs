@@ -34,18 +34,17 @@ namespace WebView
         //    return materialDTO;
         //}
         [HttpGet]
-        public IEnumerable<ServiceViewModel> Get()
+        public IEnumerable<ServiceListViewModel> Get()
         {
             var services = _serviceService.GetAllServices();
 
             var mapper = new MapperConfiguration(w =>
             {
-                w.CreateMap<Service, ServiceViewModel>()
+                w.CreateMap<Service, ServiceListViewModel>()
                         .ForMember("Name", opt => opt.MapFrom(n => n.ServiceTypes.Name))
-                        .ForMember("Quantity", opt => opt.MapFrom(p => p.Quantity))
                         .ForMember("Shop", opt => opt.MapFrom(s => s.Shop.Name));
             }).CreateMapper();
-            return mapper.Map<IEnumerable<Service>, List<ServiceViewModel>>(services);
+            return mapper.Map<IEnumerable<Service>, List<ServiceListViewModel>>(services);
         }
         //// GET api/<controller>/5
         //[HttpGet("{id}")]
