@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ModelsLibrary
 {
-    public class BuildingObject
+    public class Shop
     {
         public int Id { get; set; }
 
@@ -16,7 +16,7 @@ namespace ModelsLibrary
         public IList<Material> Materials { get; set; }
         public IList<Service> Services { get; set; }
 
-        public BuildingObject()
+        public Shop()
         {
             Materials = new List<Material>();
             Services = new List<Service>();

@@ -14,10 +14,10 @@ namespace Storage
         {
         }
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    optionsBuilder.UseSqlServer(@"Data Source=DEV06\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True");
-        //}
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            optionsBuilder.UseSqlServer("Data Source=DESKTOP-0NDBMIJ\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True");
+        }
         public DbContext Instance => this;
 
         public DbSet<Material> Materials { get; set; }

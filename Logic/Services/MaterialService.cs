@@ -13,7 +13,7 @@ namespace Logics
         public MaterialService(IStorageContext context) //попробовать с зависимостями
         {
             _context = context;
-            _repository = new Repository<Material>(_context);
+            _repository = new MaterialRepository(_context);
         }
 
         public Material GetMaterial(int? id)

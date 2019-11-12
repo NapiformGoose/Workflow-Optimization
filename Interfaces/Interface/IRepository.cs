@@ -2,12 +2,13 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ModelsLibrary;
 
 namespace Interfaces
 {
-    public interface IRepository<T> where T : class
+    public interface IRepository<T> 
     {
-        IEnumerable<T> GetAll(); 
+        IEnumerable<T> GetAll();
         T Get(int id); 
         void Create(T item); 
         void Update(T item); 

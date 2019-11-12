@@ -4,7 +4,6 @@ D:\Projects\WorkflowOptimization\Interfaces\bin\Debug\netcoreapp2.2\Interfaces.p
 D:\Projects\WorkflowOptimization\Interfaces\bin\Debug\netcoreapp2.2\ModelsLibrary.dll
 D:\Projects\WorkflowOptimization\Interfaces\bin\Debug\netcoreapp2.2\ModelsLibrary.pdb
 D:\Projects\WorkflowOptimization\Interfaces\obj\Debug\netcoreapp2.2\Interfaces.csprojAssemblyReference.cache
-D:\Projects\WorkflowOptimization\Interfaces\obj\Debug\netcoreapp2.2\Interfaces.csproj.CoreCompileInputs.cache
 D:\Projects\WorkflowOptimization\Interfaces\obj\Debug\netcoreapp2.2\Interfaces.AssemblyInfoInputs.cache
 D:\Projects\WorkflowOptimization\Interfaces\obj\Debug\netcoreapp2.2\Interfaces.AssemblyInfo.cs
 D:\Projects\WorkflowOptimization\Interfaces\obj\Debug\netcoreapp2.2\Interfaces.csproj.CopyComplete

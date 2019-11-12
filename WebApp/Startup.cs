@@ -36,8 +36,11 @@ namespace WebApp
             services.AddMvc().AddApplicationPart(assembly).AddControllersAsServices();
 
 
-            services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DEV06\\SQLEXPRESS;Initial Catalog=WorkflowOptimizationDB;Integrated Security=True"));
+            services.AddDbContext<WorkflowOpimizationDBContext>(options => options.UseSqlServer("Data Source=DESKTOP-0NDBMIJ\\SQLEXPRESS Catalog=WorkflowOptimizationDB;Integrated Security=True"));
             services.AddTransient<IMaterialService, MaterialService>();
+            services.AddTransient<IWorkingDayService, WorkingDayService>();
+            services.AddTransient<IWorkerService, WorkerService>();
+            services.AddTransient<IServiceService, ServiceService>();
             services.AddTransient<IStorageContext, WorkflowOpimizationDBContext>();
             services.Configure<CookiePolicyOptions>(options =>
             {

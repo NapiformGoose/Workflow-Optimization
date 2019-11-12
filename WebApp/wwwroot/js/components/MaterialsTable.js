@@ -7,11 +7,17 @@ class MaterialsTable extends Component {
         return (
           <div>
           <BootstrapTable data={this.props.materialsCollection} striped={true} hover={true}>
-          <TableHeaderColumn isKey dataField='id'>
-            ID
+          <TableHeaderColumn isKey dataField='name'>
+            Name
           </TableHeaderColumn>
           <TableHeaderColumn dataField='quantity'>
             Quantity
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='shop'>
+            Shop
+          </TableHeaderColumn>
+          <TableHeaderColumn dataField='date'>
+            Date
           </TableHeaderColumn>
           </BootstrapTable>
         </div>

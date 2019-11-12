@@ -11,14 +11,14 @@ namespace ModelsLibrary
         public int Id { get; set; }
 
         public int MaterialTypeId { get; set; }
-        public virtual MaterialType MaterialType { get; set; }
+        public MaterialType MaterialType { get; set; }
 
         [Required]
         [StringLength(10)]
-        public int Quantity { get; set; } //количество
+        public int Quantity { get; set; } 
 
-        public int? BuildingObjectId { get; set; }
-        public BuildingObject BuildingObject { get; set; }
+        public int? ShopId { get; set; }
+        public Shop Shop { get; set; }
 
         public int? WorkingDayId { get; set; }
         public WorkingDay WorkingDay { get; set; }

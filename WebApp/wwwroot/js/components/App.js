@@ -1,7 +1,8 @@
 ﻿import React, { Component } from "react";
 import regeneratorRuntime, { async } from "regenerator-runtime";
 //import { request } from "http";
-import Nav from "./Router";
+import FunctionalPanel from "./FunctionalPanel";
+import NavigationBar from "./Router";
 import MainLayout from "./MainLayout";
 
 export class App extends Component {
@@ -10,18 +11,27 @@ export class App extends Component {
         super(props);
 
         this.state = {
-            // selected: "",
-            materialsCollection: null
+            materialsCollection: null,
+            workingDaysCollection: null
         };
 
         var xhr = new XMLHttpRequest();
         xhr.open("GET", "Materials/Get", true);
         xhr.responseType = "text";
         xhr.onload = function () {
-            var data = xhr.responseText;
-            var data1 = JSON.parse(data);
-            this.setState({ materialsCollection: data1 });
-            this.a;
+            var response = xhr.responseText;
+            var data = JSON.parse(response);
+            this.setState({ materialsCollection: data });
+        }.bind(this);
+        xhr.send();
+
+        var xhr = new XMLHttpRequest();
+        xhr.open("GET", "WorkingDay/Get", true);
+        xhr.responseType = "text";
+        xhr.onload = function () {
+            var response = xhr.responseText;
+            var data = JSON.parse(response);
+            this.setState({ workingDaysCollection: data });
         }.bind(this);
         xhr.send();
     }
@@ -42,10 +52,12 @@ export class App extends Component {
     //     //xhr1.send(data);
     // }
     render() {
+        console.log(this.state.workingDaysCollection);
         return (
             <div className="app">
-                <Nav />
-                <MainLayout materialsCollection = {this.state.materialsCollection}/>
+                <NavigationBar />
+                <FunctionalPanel />
+                <MainLayout materialsCollection = {this.state.materialsCollection} workingDaysCollection = {this.state.workingDaysCollection}/>
             </div>
         );
     }

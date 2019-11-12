@@ -18,8 +18,8 @@ namespace ModelsLibrary
         [StringLength(10)]
         public int Quantity { get; set; }
 
-        public int? BuildingObjectId { get; set; }
-        public BuildingObject BuildingObject { get; set; }
+        public int? ShopId { get; set; }
+        public Shop Shop { get; set; }
 
         public int? WorkingDayId { get; set; }
         public WorkingDay WorkingDay { get; set; }

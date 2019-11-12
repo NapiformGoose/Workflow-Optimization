@@ -3,11 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 
-namespace Common
+namespace WebView
 {
-    public class WorkerView
+    public class WorkerViewModel
     {
-        public int Id { get; set; }
         public string Name { get; set; }
         public string Position { get; set; }
     }

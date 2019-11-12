@@ -8,12 +8,10 @@
 *.ctf
 *.cmd
 *.txt
-!CMakeLists.txt
 *.pdb
 *.exe
 *.dll
 *.tlog
-.idea/
 .vs/
 .backup/
 .nuget/
@@ -21,12 +19,21 @@ x64/
 x86/
 ipch/
 Win32/
+bin/
+obj/
 CMakeFiles/
 node_modules/
-packages
-TestResults
-bin
-obj
+packagess
+Interfaces/bin/
+Interfaces/obj/
+Logic/bin/
+Logic/obj/
+Storage/bin/
+Storage/obj/
+WebApp/bin/
+WebApp/obj/
+WebView/bin/
+WebView/obj/
 WebApp/node_modules/
 
 
