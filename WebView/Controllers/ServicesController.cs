@@ -13,12 +13,12 @@ namespace WebView
     //[Route("api/[controller]")]
     //[ApiController]
     [EnableCors("AllowAllOrigin")]
-    public class WorkerController : Controller
+    public class ServicesController : Controller
     {
-        IWorkerService _workerService;
-        public WorkerController(IWorkerService workerService)
+        IServiceService _serviceService;
+        public ServicesController(IServiceService serviceService)
         {
-            _workerService = workerService;
+            _serviceService = serviceService;
         }
         
         public ActionResult Index()
@@ -34,17 +34,17 @@ namespace WebView
         //    return materialDTO;
         //}
         [HttpGet]
-        public IEnumerable<WorkerViewModel> Get()
+        public IEnumerable<ServiceListViewModel> Get()
         {
-            var worker = _workerService.GetWorkers();
+            var services = _serviceService.GetAllServices();
 
             var mapper = new MapperConfiguration(w =>
             {
-                w.CreateMap<Worker, WorkerViewModel>()
-                        .ForMember("Name", opt => opt.MapFrom(n => n.Name))
-                        .ForMember("Position", opt => opt.MapFrom(p => p.Position));
+                w.CreateMap<Service, ServiceListViewModel>()
+                        .ForMember("Name", opt => opt.MapFrom(n => n.ServiceTypes.Name))
+                        .ForMember("Shop", opt => opt.MapFrom(s => s.Shop.Name));
             }).CreateMapper();
-            return mapper.Map<IEnumerable<Worker>, List<WorkerViewModel>>(worker);
+            return mapper.Map<IEnumerable<Service>, List<ServiceListViewModel>>(services);
         }
         //// GET api/<controller>/5
         //[HttpGet("{id}")]

@@ -13,12 +13,12 @@ namespace WebView
     //[Route("api/[controller]")]
     //[ApiController]
     [EnableCors("AllowAllOrigin")]
-    public class ServiceController : Controller
+    public class WorkingDaysController : Controller
     {
-        IServiceService _serviceService;
-        public ServiceController(IServiceService serviceService)
+        IWorkingDayService _workingDayService;
+        public WorkingDaysController(IWorkingDayService workingDayService)
         {
-            _serviceService = serviceService;
+            _workingDayService = workingDayService;
         }
         
         public ActionResult Index()
@@ -34,17 +34,31 @@ namespace WebView
         //    return materialDTO;
         //}
         [HttpGet]
-        public IEnumerable<ServiceListViewModel> Get()
+        public IEnumerable<WorkingDayViewModel> Get()
         {
-            var services = _serviceService.GetAllServices();
+            var workingDays = _workingDayService.GetWorkingDays();
 
             var mapper = new MapperConfiguration(w =>
             {
-                w.CreateMap<Service, ServiceListViewModel>()
-                        .ForMember("Name", opt => opt.MapFrom(n => n.ServiceTypes.Name))
-                        .ForMember("Shop", opt => opt.MapFrom(s => s.Shop.Name));
+                w.CreateMap<WorkingDay, WorkingDayViewModel>()
+                        .ForMember("Materials", opt => opt.MapFrom(m => m.Materials))
+                        .ForMember("Workers", opt => opt.MapFrom(f => f.Workers))
+                        .ForMember("Services", opt => opt.MapFrom(f => f.Services))
+                        .ForMember("Date", opt => opt.MapFrom(s => s.Date));
+                w.CreateMap<Material, MaterialViewModel>()
+                        .ForMember("Name", opt => opt.MapFrom(s => s.MaterialType.Name))
+                        .ForMember("QuantityInStock", opt => opt.MapFrom(s => s.MaterialType.QuantityInStock))
+                        .ForMember("Quantity", opt => opt.MapFrom(s => s.Quantity));
+                w.CreateMap<Worker, WorkerViewModel>()
+                        .ForMember("Name", opt => opt.MapFrom(n => n.WorkerTypes.Name))
+                        .ForMember("Position", opt => opt.MapFrom(p => p.WorkerTypes.Position));
+                w.CreateMap<Service, ServiceViewModel>()
+                       .ForMember("Name", opt => opt.MapFrom(a => a.ServiceTypes.Name))
+                       .ForMember("Shop", opt => opt.MapFrom(a => a.Shop.Name))
+                       .ForMember("WorkingDay", opt => opt.MapFrom(a => a.WorkingDay.Date))
+                       .ForMember("Quantity", opt => opt.MapFrom(a => a.Quantity));
             }).CreateMapper();
-            return mapper.Map<IEnumerable<Service>, List<ServiceListViewModel>>(services);
+            return mapper.Map<IEnumerable<WorkingDay>, List<WorkingDayViewModel>>(workingDays);
         }
         //// GET api/<controller>/5
         //[HttpGet("{id}")]

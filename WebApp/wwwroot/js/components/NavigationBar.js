@@ -1,36 +1,29 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Form, FormControl, Button, NavItem } from 'react-bootstrap';
+import { Navbar, Nav, Form, FormControl, Button, NavItem, Container } from 'react-bootstrap';
+import "../../css/bootstrap.css";
 
 export class NavigationBar extends Component {
   render() {
     return (
-      <div className="nav">
-        {/* <nav>
-          <ul>
-            <li><Link to='/'>Home</Link></li>
-            <li><Link to='/materials'>Materials</Link></li>
-          </ul>
-        </nav> */}
-        <Navbar expand="lg" bg="dark" variant="dark">
+        <Navbar expand="sm" bg="dark" variant="dark">
             <Navbar.Brand href="/" as={Link} to="/">Workflow Optimization</Navbar.Brand>
               <Nav className="mr-auto">
                 <NavItem href="/materials">
-                  <Nav.Link as={Link} to="/materials" >Materials</Nav.Link>
+                  <Nav.Link as={Link} to="/materials" >Материалы</Nav.Link>
                 </NavItem>
-              </Nav>
-              <Nav className="mr-auto">
                 <NavItem href="/workingdays">
-                  <Nav.Link as={Link} to="/workingdays" >Working days</Nav.Link>
+                  <Nav.Link as={Link} to="/workingdays" >Рабочие дни</Nav.Link>
                 </NavItem>
-              </Nav>
-              <Nav className="mr-auto">
                 <NavItem href="/services">
-                  <Nav.Link as={Link} to="/services" >Services</Nav.Link>
+                  <Nav.Link as={Link} to="/services" >Услуги</Nav.Link>
+                </NavItem>
+                <NavItem href="/workers">
+                  <Nav.Link as={Link} to="/workers" >Работники</Nav.Link>
                 </NavItem>
               </Nav>
           </Navbar>
-      </div>
+
     );
   }
 }

@@ -23,9 +23,9 @@ namespace Logics
                 //throw new ValidationException("Не установлено id телефона", "");
             }
 
-            Worker workingDay = _repository.Get(id.Value);
+            Worker worker = _repository.Get(id.Value);
 
-            if (workingDay == null)
+            if (worker == null)
             {
                 //throw new ValidationException("Телефон не найден", "");
             }

@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Storage.Migrations
 {
-    public partial class Init : Migration
+    public partial class AddWorkerType : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -45,6 +45,20 @@ namespace Storage.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Shop", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "WorkerType",
+                columns: table => new
+                {
+                    Id = table.Column<int>(nullable: false)
+                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                    Name = table.Column<string>(maxLength: 50, nullable: false),
+                    Position = table.Column<string>(maxLength: 50, nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_WorkerType", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -134,13 +148,18 @@ namespace Storage.Migrations
                 {
                     Id = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
-                    Name = table.Column<string>(maxLength: 50, nullable: false),
-                    Position = table.Column<string>(maxLength: 50, nullable: false),
+                    WorkerTypeId = table.Column<int>(nullable: false),
                     WorkingDayId = table.Column<int>(nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Worker", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Worker_WorkerType_WorkerTypeId",
+                        column: x => x.WorkerTypeId,
+                        principalTable: "WorkerType",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Worker_WorkingDay_WorkingDayId",
                         column: x => x.WorkingDayId,
@@ -180,6 +199,11 @@ namespace Storage.Migrations
                 column: "WorkingDayId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Worker_WorkerTypeId",
+                table: "Worker",
+                column: "WorkerTypeId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Worker_WorkingDayId",
                 table: "Worker",
                 column: "WorkingDayId");
@@ -204,6 +228,9 @@ namespace Storage.Migrations
 
             migrationBuilder.DropTable(
                 name: "Shop");
+
+            migrationBuilder.DropTable(
+                name: "WorkerType");
 
             migrationBuilder.DropTable(
                 name: "WorkingDay");

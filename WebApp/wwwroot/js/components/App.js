@@ -12,7 +12,8 @@ export class App extends Component {
         this.state = {
             materialsCollection: null,
             workingDaysCollection: null,
-            servicesCollection: null
+            servicesCollection: null,
+            workersCollection: null
         };
 
         var xhr = new XMLHttpRequest();
@@ -26,7 +27,7 @@ export class App extends Component {
         xhr.send();
 
         var xhr1 = new XMLHttpRequest();
-        xhr1.open("GET", "WorkingDay/Get", true);
+        xhr1.open("GET", "WorkingDays/Get", true);
         xhr1.responseType = "text";
         xhr1.onload = function () {
             var response = xhr1.responseText;
@@ -36,15 +37,24 @@ export class App extends Component {
         xhr1.send();
 
         var xhr2 = new XMLHttpRequest();
-        xhr2.open("GET", "Service/Get", true);
+        xhr2.open("GET", "Services/Get", true);
         xhr2.responseType = "text";
         xhr2.onload = function () {
             var response = xhr2.responseText;
             var data = JSON.parse(response);
             this.setState({ servicesCollection: data });
         }.bind(this);
-        console.log(this.state.servicesCollection);
         xhr2.send();
+
+        var xhr3 = new XMLHttpRequest();
+        xhr3.open("GET", "Workers/Get", true);
+        xhr3.responseType = "text";
+        xhr3.onload = function () {
+            var response = xhr3.responseText;
+            var data = JSON.parse(response);
+            this.setState({ workersCollection: data });
+        }.bind(this);
+        xhr3.send();
     }
 
      //componentDidMount() { //обновление выбранного элемента
@@ -63,14 +73,14 @@ export class App extends Component {
     //     //xhr1.send(data);
     // }
     render() {
-        console.log(this.state.servicesCollection);
         return (
             <div className="app">
                 <NavigationBar />
                 <MainLayout 
                 materialsCollection = {this.state.materialsCollection} 
                 workingDaysCollection = {this.state.workingDaysCollection}
-                servicesCollection = {this.state.servicesCollection}/>
+                servicesCollection = {this.state.servicesCollection}
+                workersCollection = {this.state.workersCollection}/>
             </div>
         );
     }

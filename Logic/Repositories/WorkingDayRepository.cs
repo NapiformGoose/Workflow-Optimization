@@ -23,7 +23,7 @@ namespace Logics
                 .Include("Materials.Shop")
                 .Include("Materials.MaterialType")
                 .Include("Materials.WorkingDay")
-                .Include("Workers")
+                .Include("Workers.WorkerTypes")
                 .Include("Services.ServiceTypes")
                 .Include("Services.Shop")
                 .Include("Services.WorkingDay")

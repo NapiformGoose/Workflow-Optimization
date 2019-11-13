@@ -10,8 +10,8 @@ using Storage;
 namespace Storage.Migrations
 {
     [DbContext(typeof(WorkflowOpimizationDBContext))]
-    [Migration("20191108070051_Init")]
-    partial class Init
+    [Migration("20191113144841_Add QuantityInStock")]
+    partial class AddQuantityInStock
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,8 @@ namespace Storage.Migrations
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50);
+
+                    b.Property<int>("QuantityInStock");
 
                     b.HasKey("Id");
 
@@ -124,6 +126,25 @@ namespace Storage.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<int>("WorkerTypeId");
+
+                    b.Property<int>("WorkingDayId");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("WorkerTypeId");
+
+                    b.HasIndex("WorkingDayId");
+
+                    b.ToTable("Worker");
+                });
+
+            modelBuilder.Entity("ModelsLibrary.WorkerType", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+
                     b.Property<string>("Name")
                         .IsRequired()
                         .HasMaxLength(50);
@@ -132,13 +153,9 @@ namespace Storage.Migrations
                         .IsRequired()
                         .HasMaxLength(50);
 
-                    b.Property<int>("WorkingDayId");
-
                     b.HasKey("Id");
 
-                    b.HasIndex("WorkingDayId");
-
-                    b.ToTable("Worker");
+                    b.ToTable("WorkerType");
                 });
 
             modelBuilder.Entity("ModelsLibrary.WorkingDay", b =>
@@ -188,6 +205,11 @@ namespace Storage.Migrations
 
             modelBuilder.Entity("ModelsLibrary.Worker", b =>
                 {
+                    b.HasOne("ModelsLibrary.WorkerType", "WorkerTypes")
+                        .WithMany("Workers")
+                        .HasForeignKey("WorkerTypeId")
+                        .OnDelete(DeleteBehavior.Cascade);
+
                     b.HasOne("ModelsLibrary.WorkingDay", "WorkingDay")
                         .WithMany("Workers")
                         .HasForeignKey("WorkingDayId")

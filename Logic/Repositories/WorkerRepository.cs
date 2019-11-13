@@ -19,8 +19,10 @@ namespace Logics
 
         public IEnumerable<Worker> GetAll()
         {
-            IList<Worker> workingDays = _dbSet.ToList();
-            return workingDays;
+            IList<Worker> workers = _dbSet
+                .Include(s => s.WorkerTypes)
+                .ToList();
+            return workers;
         }
         public Worker Get(int id)
         {

@@ -11,12 +11,8 @@ namespace ModelsLibrary
         public int Id { get; set; }
 
         [Required]
-        [StringLength(50)]
-        public string Name { get; set; }
-        [Required]
-        [StringLength(50)]
-        public string Position { get; set; }
-
+        public int WorkerTypeId { get; set; }
+        public WorkerType WorkerTypes { get; set; }
         public int WorkingDayId { get; set; }
         public WorkingDay WorkingDay { get; set; }
 

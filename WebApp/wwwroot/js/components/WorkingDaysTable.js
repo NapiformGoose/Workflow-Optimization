@@ -17,12 +17,11 @@ class WorkingDaysTable extends Component {
                 <Button
                     onClick={() => {
                         this.setState({ modalShow: true });
-                        console.log(row);
                         this.setState({ object: row });
                     }
                     }
                 >
-                    Show
+                    Показать
                 </Button>
                 <InformationCenteredModal
                     show = { this.state.modalShow }
@@ -37,10 +36,10 @@ class WorkingDaysTable extends Component {
             <div>
                 <BootstrapTable data={this.props.workingDaysCollection} striped={true} hover={true}>
                     <TableHeaderColumn isKey dataField='date'>
-                        Date
+                        Дата
                     </TableHeaderColumn>
                     <TableHeaderColumn dataField='button' dataFormat={this.cellButton.bind(this)}>
-                        Information
+                        Информация
                     </TableHeaderColumn>
                 </BootstrapTable>
             </div>
@@ -75,7 +74,6 @@ class InformationCenteredModal extends Component {
         })
     }
     render() {
-        console.log(this.props.object == null ? null : this.props.object.workers);
         return (
             <div>
                 <Modal

@@ -8,16 +8,10 @@ class MaterialsTable extends Component {
           <div>
           <BootstrapTable data={this.props.materialsCollection} striped={true} hover={true}>
           <TableHeaderColumn isKey dataField='name'>
-            Name
+            Название
           </TableHeaderColumn>
-          <TableHeaderColumn dataField='quantity'>
-            Quantity
-          </TableHeaderColumn>
-          <TableHeaderColumn dataField='shop'>
-            Shop
-          </TableHeaderColumn>
-          <TableHeaderColumn dataField='date'>
-            Date
+          <TableHeaderColumn dataField='quantityInStock'>
+            Количество на складе
           </TableHeaderColumn>
           </BootstrapTable>
         </div>

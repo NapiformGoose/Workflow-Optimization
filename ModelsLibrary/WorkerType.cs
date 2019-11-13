@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ModelsLibrary
 {
-    public class MaterialType
+    public class WorkerType
     {
         public int Id { get; set; }
 
@@ -13,12 +13,13 @@ namespace ModelsLibrary
         [StringLength(50)]
         public string Name { get; set; }
 
-        public int QuantityInStock { get; set; }
-
-        public IList<Material> Materials { get; set; }
-        public MaterialType()
+        [Required]
+        [StringLength(50)]
+        public string Position { get; set; }
+        public IList<Worker> Workers { get; set; }
+        public WorkerType()
         {
-            Materials = new List<Material>();
+            Workers = new List<Worker>();
         }
     }
 }
